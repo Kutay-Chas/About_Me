@@ -2,67 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
-    <title>Om Mig</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutay Sulita</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Kutay Sulita: En Legend</h1>
+    <header>
+        <h1>Kutay Sulita</h1>
+        <p id="description">En legendarisk glädjespridare som ibland misslyckas</p>
+        <button id="menu-toggle" aria-expanded="false" aria-controls="main-nav">Meny</button>
+        <nav id="main-nav">
+            <a href="#about">Om mig</a>
+            <a href="#hobbies">Hobbys</a>
+            <a href="#quote">Favorit Quote</a>
+            <a href="#anime">Anime</a>
+            <a href="#anime-characters">Anime Karaktärer</a>
+            <a href="#quiz">Två sanningar och en lögn</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
 
-    <ul>
-        <li>Namn: Kutay Sulita</li>
-        <li>Ålder: 21 år</li>
-        <li>Födeslsedag: 2005-09-07</li>
-        <li>Födelseort: Eskilstuna, Sverige</li>
-    </ul>
+        <!-- OM MIG -->
 
-    <h2>Fritidsintressen:</h2>
-    <ul>
-        <li>Spela spel</li>
-        <li>Lägga pussel</li>
-        <li>Leka med katterna</li>
-        <li>Titta på Brooklyn Nine-Nine för 74e gången</li>
-    </ul>
+    <main>
+        <section id="about">
+            <h2>Om mig:</h2>
+            <p>Välkommen till min sida! Jag heter <strong>Kutay Sulita</strong> och studerar UX-engineering på Chas Academy. <br> Jag bor tillsammans med min mamma i en lägenhet i Stockholm. Vi har en bra relation.</p>
+            <img src="bilder/KutayFBPic.jpeg" alt="Bild på Kutay i Gotland" width="200">
+            <p>Vi har också två katter, Nare och Lale. Nare är sex år gammal och Lale är två år gammal. <br>Nare gillar att leka med mini makeup-sponges, när jag kastar en sån jagar hon den och hämtar tillbaka den så att jag ska kasta den igen. <br> Lale gillar att leka med matatabi pinnar, hon gillar när jag kastar sådana så att hon kan springa efter den och tugga på den.</p>
+            <img src="bilder/PicOfNare.jpeg" alt="Bild på katten Nare som sover med tungan utstucken" width="200">
+            <img src="bilder/PicOfLale.jpeg" alt="Bild på katten Lale som sitter i en kruka, omgiven av växter" width="200">
+        </section>
 
-    <h2>Vad jag lyssnar på:</h2>
-    <ul>
-        <li>MARINA</li>
-        <li>EPIC: the musical</li>
-        <li>Lady Gaga</li>
-    </ul>
-    
-    <h2>Min familj:</h2>
-    <ul>
-        <li>Mamma: Bahtinor Abdurehim</li>
-        <li>Pappa: deceased</li>
-        <li>Bror: Kavsar Kurash</li>
-    </ul>
+        <section id="erfrarenheter">
+            <h2>Mina erfarenheter:</h2>
+            <p id="work-info" class="collapsed">Mitt arbetsliv började med feriejobb via stockholms stad. Det första feriejobbet var som kolloledare (s.k. ungdomscrew) på Barnens ö. 
+            Vi var 20 ungdomar som bodde tillsammans i tre veckor. med undantag för helger. Som UC fick jag göra många uppgifter, bland annat lekte vi med och såg efter barnen, byggde och satt upp myggnät, tog hand om huset vi bodde i, delade upp arbetsuppgifter som att diska, laga mat, baka, sopsortera och tvätta kläder.
+                <br>
+            Det andra feriejobbet jag fick var som skådespelare för en uppsättning av Robin Hood på en utomhusteater. Vi var många skådespelare i olika åldrar, allt från 7 till 62 år. Jag spelade en i Robin Hoods gäng. Publiken som mest bestod av barn tyckte att det var en mycket rolig föreställning.
+                <br>
+            Det första "riktiga jobbet" jag fick var som "crew member", som de kallade rollen, på Five guys när de öppnade en ny restaurang i Stockholm. Jag var anställd på heltid i nästan två månader tills de gjorde sig av med minst 80 anställde under en och samma vecka. Sen tog de faktiskt tillbaka mig med att annat kontrakt och jag jobbade där i tre månader till. Som restaurangbiträde på five guys fick jag erfarenhet av att arbeta i en snabbtidsmiljö och samarbeta med andra anställda. Jag lärde mig attförbereda mat på morgnarna, hantera kassan med respektfullt kundbemötande, göra milkshakes, göra pommes frites, quality control och mycket annat.
+                <br>
+            Efter den arbetsplatsen fick jag jobb som lärarassistent på Kista grundskola. Det roligaste jobbet jag har haft hittils. Jag fick kliva in som lärare flera gånger när ordinarie lärarna inte var på plats och fick finnas där som en trygg person för många av eleverna att vända sig till om något hände eller om de hade funderingar över något.</p>
+            <button id="read-more" aria-expanded="false">Läs mer...</button>
+        </section>
 
-    <h2>Min favorit quote:</h2>
-    <blockquote>
-        "Only when the power of love overcomes the love of power, the world will know peace." 
-        -Jimi Hendrix 
-    </blockquote>
-<!-- Add more info. like. birthday and such. think of those character portfolios.-->
-    <section id="quiz">
-        <h2>Två sanningar och en lögn.</h2>
-        <p>Nu när du lärt känna mig lite, gissa vilket påstående som är falskt:</p>
-        <div id="quizOptions">
-                <button class="quiz-btn" data-correct="true">Jag kan inte simma</button>
-                <button class="quiz-btn" data-correct="false">Jag drunknade nästan i Norge</button>
-                <button class="quiz-btn" data-correct="true">Jag har varit i vita huset</button>
-        </div>
-        <p id="result"></p>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: sulitakutay@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/kutay-sulita" target="_blank">LinkedIn Profil</a></p>
-    </section>
-    <h2>Katterna: (placeholder bild for now)</h2>
-    <img src="https://i.pinimg.com/736x/e4/82/20/e482207e193c10c3790c50199f6a87fa.jpg" alt="en räv" width="300">
-    
-<!-- To add: Birthday, link to linkedin and..?, fave color, pics of each cat, lista på färdigheter och erfarenheter, dark mode, animation?, pic of me but when you hover over it, i will smile..? or vice versa. lil "quiz" - two truths and a lie, the user will guess the lie about me. correct guess will play the yayyy sound from kindergarten and wrong will play the wa woah sound. -->
+        <!-- MINA INTRESSEN -->
+
+        <section id="hobbies">
+            <h2>Mina hobbys</h2>
+            <ul>
+                <li>Spela spel</li>
+                <li>Lägga pussel</li>
+                <li>Leka med katterna</li>
+                <li>Kolla på roller av rästskådespelare i timmar</li>
+                <li>Tappa bort mig i anime (eller annat) wikis</li>
+            </ul>
+        </section>
+
+        <section id="quote">
+        <h2>Min favorit quote:</h2>
+        <blockquote id="quote-text">
+            "Only when the power of love overcomes the love of power, the world will know peace." 
+            -Jimi Hendrix 
+        </blockquote>
+        <p>Anledningen till att detta är min favoritquote är att det representerar en viktig budskap om kärlek och fred men viktigast av allt ger den mig hopp.</p>
+        </section>
+
+        <section id="odd">
+            <h2>Det märkligaste någon har sagt till mig...</h2>
+            <blockquote id="odd-text">
+                "Du har en tårtbit i ditt öga." 
+                -Min optiker
+            </blockquote>
+            <p>När jag var på synundersökning för ett par år sen sa min optiker detta till mig. Jag var förvirrad över vad hon menade och det är svårt att förklara. Så här kommer en bild på mitt högra öga:</p>
+            <img src="bilder/MyEye.png" alt="Bild på Kutays högra öga" width="400">
+        </section>
+
+        <section id="anime">
+            <h2>Mina favorit-animes</h2>
+            <p>Här är några av mina favorit-animes som du kan läsa om på MyAnimeList:</p>
+            <ul>
+                <li><a href="https://myanimelist.net/anime/38691/Dr_Stone" target="_blank">Dr. Stone</a></li>
+                <li><a href="https://myanimelist.net/anime/4898/Kuroshitsuji?q=black%20bu&cat=anime" target="_blank">Black Butler</a></li>
+                <li><a href="https://myanimelist.net/anime/53446/Tondemo_Skill_de_Isekai_Hourou_Meshi?q=campfire&cat=anime" target="_blank">Campfire cooking in another world with my absurd skill</a></li>
+                <li><a href="https://myanimelist.net/anime/40620/Uramichi_Oniisan?q=uramichi&cat=anime" target="_blank">Life lessons with Uramichi-Oniisan</a></li>
+                <li><a href="https://myanimelist.net/anime/52211/Mashle?q=mashle&cat=anime" target="_blank">Mashle</a></li>
+            </ul>
+
+        <section id="anime-characters">
+            <h2>Mina favoritkaraktärer</h2>
+            <p>Här är några av mina favoritkaraktärer från animes som du kan läsa om på deras wikis:</p>
+            <ul>
+                <li><a href="https://dr-stone.fandom.com/wiki/Gen_Asagiri" target="_blank">Gen Asagiri</a></li>
+                <li><a href="https://kuroshitsuji.fandom.com/wiki/Grelle_Sutcliff" target="_blank">Grell Sutcliff</a></li>
+                <li><a href="https://saikikusuo-no-psinan.fandom.com/wiki/Saiki_Kusuo" target="_blank">Saiki Kusou</a></li>
+                <li><a href="https://tondemo-skill.fandom.com/wiki/Sui" target="_blank">Sui</a></li>
+            </ul>
+       </section>
+        
+       <!-- TVÅ SANNINGAR OCH EN LÖGN -->
+
+        <section id="quiz">
+            <h2>Två sanningar och en lögn</h2>
+            <p>Vilket påstående om mig tror du är falskt?</p>
+            <div id="quizOptions">
+                    <button class="quiz-btn" data-correct="true">Jag kan inte simma</button>
+                    <button class="quiz-btn" data-correct="false">Jag drunknade nästan i Norge</button>
+                    <button class="quiz-btn" data-correct="false">Jag har varit i vita huset</button>
+            </div>
+            <p id="quizResult"></p>
+        </section>
+
+        <!-- KONTAKT -->
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Telefon: 073-875 49 32</p>
+            <p>Email: sulitakutay@gmail.com</p>
+            <p>LinkedIn: <a href="https://se.linkedin.com/in/kutay-sulita-b0415041a" target="_blank">Kutay Sulita</a></p>
+        </section>
+
+    <script src="script.js"></script>
+    </main>
+
 <footer>
      <p>© 2026 Kutay Sulita</p>
 </footer>
