@@ -8,6 +8,15 @@ body {
     padding: 0 20px;
 }
 
+nav { display: flex; flex-direction: row; }
+
+@media (max-width: 600px) {
+  nav { flex-direction: column; }
+}
+
+img { max-width: 100%; height: auto; }
+button, a { min-height: 44px; padding: 10px 14px; }
+
 #main-nav {
   display: none;
 }
@@ -25,11 +34,6 @@ nav a {
     padding: 5px 10px;
 }
 
-nav a:hover {
-    background-color: #fdfdfd;
-    color: rgb(136, 92, 181);
-    border-radius: 5px;
-}
 
 h1 {
     color: #223344;
